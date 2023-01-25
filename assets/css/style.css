@@ -19,10 +19,15 @@ light gray #e6e6e6
 */
 
 /* GENERALITIES */
+html {
+    width: 100%;
+}
+
 body {
     margin: 0;
     font-family: 'Roboto Slab', serif;
     width: 100%;
+    overflow-x: hidden;
 }
 
 /* SCROLL BAR CUSTOM */
@@ -146,6 +151,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow-x: hidden;
 }
 
 /* BANNER */
@@ -159,6 +165,7 @@ section#banner {
     margin-top: 70px;
     background-image: url(../img/phytotherapia_banner.png);
     background-size: cover;
+    background-position: top;
     color: white;
     box-shadow: -1px 1px 10px rgba(23, 77, 64, 0.5);
 }
@@ -186,6 +193,7 @@ section#guts {
     margin: 0 14% 30px 14%;
     padding: 60px 40px 60px 40px;
     box-shadow: -1px 1px 10px rgba(23, 77, 64, 0.5);
+    box-sizing: border-box;
 }
 
 section#guts div {
